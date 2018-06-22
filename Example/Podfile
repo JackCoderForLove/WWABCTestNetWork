@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'WWABCTestNetWork_Example' do
+  pod 'WWABCTestNetWork', :path => '../'
+
+  target 'WWABCTestNetWork_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
